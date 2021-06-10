@@ -38,8 +38,6 @@ public class snakeandladder {
                                 else if(player==89){
                                 player=91;
                                 }
-
-
 			}
 
 			if(player==27 || player==38 || player==66 || player==90 || player==99 || player==97) {
@@ -66,7 +64,6 @@ public class snakeandladder {
 			if(player==100){
 			System.out.println("CONGRATULATION ! YOU WON ");
 			}
-		
 		}
 	}
 }
