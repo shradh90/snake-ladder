@@ -8,7 +8,7 @@ public class snakeandladder {
 		System.out.println("at position 2,9,25,30,51,65,79,89 we have ladders");
 		System.out.println("at position 10,25,38,48 we have snakes");
 	
-		while(player != 100) {
+		while(player <= 100) {
 		int daice = (int) (Math.floor(Math.random() * 10 ) % 6) + 1;
 		player = player + daice;
 		System.out.println(" player " + player );
