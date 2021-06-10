@@ -6,9 +6,10 @@ public class snakeandladder {
 		int player=0;
 		System.out.println("at position 2,9,25,30,51,65,79,89 we have ladders");
 		System.out.println("at position 10,25,38,48 we have snakes");
-	
+		int i=0;
 		while(player <= 100) {
 		int daice = (int) (Math.floor(Math.random() * 10 ) % 6) + 1;
+		i = i + 1;
 		player = daice + player; 
 		System.out.println(" player " + player ); 
 			if(player==2 || player==9 || player==25 || player==30 || player==51 || player==65 || player==79 || player==89) {
@@ -37,8 +38,6 @@ public class snakeandladder {
                                 else if(player==89){
                                 player=91;
                                 }
-
-
 			}
 
 			if(player==27 || player==38 || player==66 || player==90 || player==99 || player==97) {
@@ -68,5 +67,7 @@ public class snakeandladder {
 			break;
 			}
 		}
+          System.out.println("total number of times daice is rolled is :" + i );
 	}
+
 }
