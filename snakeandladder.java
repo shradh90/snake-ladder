@@ -5,7 +5,8 @@ public class snakeandladder {
 		System.out.println("**************************************************************");
 		int player1;
 		int pos = 0;
-		System.out.println("snake and ladder with single player at start position 0");
+		int daice = (int) (Math.floor(Math.random() * 10 ) % 6) + 1;
+		System.out.println("playing roll the die get a number" + daice);
 	}
 }
 
