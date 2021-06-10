@@ -3,14 +3,14 @@ public class snakeandladder {
 		System.out.println("**************************************************************\t");
 		System.out.println("welcome to snake and ladder game");
 		System.out.println("**************************************************************");
-		int player=0;
+		
 		int pos = 0;
 		System.out.println("at position 2,9,25,30,51,65,79,89 we have ladders");
 		System.out.println("at position 10,25,38,48 we have snakes");
 	
-		while(player != 100) {
-		int daice = (int) (Math.floor(Math.random() * 10 ) % 6) + 1;
-		player = player + daice;
+	
+		 int player = (int) (Math.floor(Math.random() * 10 ) % 6) + 1;
+		
 		System.out.println(" player " + player );
 			if(player==2 || player==9 || player==25 || player==30 || player==51 || player==65 || player==79 || player==89) {
 			System.out.println("LUCKY! GOT A LADDER");
@@ -67,7 +67,7 @@ public class snakeandladder {
 			System.out.println("CONGRATULATION ! YOU WON ");
 			}
 		
-		}
+		
 	}
 }
 
